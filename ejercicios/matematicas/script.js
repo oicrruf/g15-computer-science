@@ -7,13 +7,32 @@ function espar(n){
     }
 }
 
-function recorrer(){
-    for(var i=1;i<=100;i++){
-        if(espar(i))
-            document.getElementById("resultado").innerHTML+="<p style='color:red'>"+i+"</p>";
-        else
-            document.getElementById("resultado").innerHTML+="<p style='color:blue;'>"+i+"</p>";
+function esprimo(p){
+    if(p==1){
+        return false;
+    }
+    for(var j=2; j<p; j++){
+        console.log(j+" % "+p);
+        if(p % j == 0){
+            return false;
+        }
+    }
+    return true;
+}
 
+function recorrer(){
+    var n = document.getElementById("numero").value;
+    if(n=='' || parseInt(n)>100){
+        alert("Ingresa un valor menor a 100!!")
+    }else{
+        document.getElementById("resultado").innerHTML="";
+        for(var i=1;i<=parseInt(n);i++){
+            if(esprimo(i)){
+                document.getElementById("resultado").innerHTML+="<p class='mb-2 text-danger'>"+i+"</p>";
+            }else{
+                document.getElementById("resultado").innerHTML+="<p class='mb-2 text-primary'>"+i+"</p>";
+            }
+        }
     }
 }
 
