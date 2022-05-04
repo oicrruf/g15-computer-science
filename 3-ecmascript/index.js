@@ -153,6 +153,80 @@ console.log(country);
 //   "Hola " + nombre
 // );
 
-const saludo = nombre => "Hola " + nombre
+// const saludo = nombre => "Hola " + nombre
 
-console.log(saludo("Mery"));
+const saludo = (data) => `Hola ${data.nombre} ${data.apellido}`;
+
+console.log(saludo({ nombre: "Mery", apellido: "Macias" }));
+
+// Módulos
+import { emoji, config } from "./modules";
+
+// Cuando importamos desde un export defaul no se usa {}
+// import emoji from "./modules";
+
+// Cambiando el nombre de lo importado
+import { config as dataBaseConfig } from "./modules";
+
+console.log(config);
+console.log(emoji());
+console.log(dataBaseConfig);
+
+// Clase
+
+class MiClase {
+  constructor() {
+    this.valor1 = 0;
+    this.valor2 = 0;
+  }
+  sumar(valor1, valor2) {
+    this.valor1 = valor1;
+    this.valor2 = valor2;
+    return this.valor1 + this.valor2;
+  }
+  restar(valor1, valor2) {
+    this.valor1 = valor1;
+    this.valor2 = valor2;
+    return this.valor1 - this.valor2;
+  }
+  hoy(type) {
+    switch (type) {
+      case "year":
+        return new Date().getFullYear();
+      default:
+        return new Date();
+    }
+  }
+}
+
+const suma = new MiClase();
+const restar = new MiClase();
+const fecha = new MiClase();
+
+console.log(suma.sumar(12, 6));
+console.log(restar.restar(12, 6));
+
+console.log(fecha.hoy());
+console.log(fecha.hoy("year"));
+
+// Promesas
+
+const holaMundo = (quien) => {
+  return new Promise((resolve, reject) => {
+    if (quien === "😎") {
+      resolve("Hola mundo! 😍");
+    } else {
+      reject("🤢");
+    }
+  });
+};
+
+holaMundo()
+  .then((respuesta) => {
+    console.log('Función ejecutada correctamente')
+    console.log(respuesta)
+  })
+  .catch((error) => {
+    console.log('Función ejecutada con errores')
+    console.log(error)
+  });
