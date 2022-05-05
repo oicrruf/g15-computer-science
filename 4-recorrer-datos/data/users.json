@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Victor Reyes",
+    "age": 36,
+    "country": "El Salvador",
+    "gender": "Masculino",
+    "emoji": ":gafas_de_sol:"
+  },
+  {
+    "name": "Jocelyn Mejia",
+    "age": 26,
+    "country": "México",
+    "gender": "Femenino",
+    "emoji": ":gafas_de_sol:"
+  },
+  {
+    "name": "Fausto Gutiérrez",
+    "age": 33,
+    "country": "México",
+    "gender": "Masculino",
+    "emoji": ":sonrisita:"
+  },
+  {
+    "name": "Delia Barrón",
+    "age": 22,
+    "country": "México",
+    "gender": "Femenino",
+    "emoji": ":extraterrestre:"
+  },
+  {
+    "name": "Mery Macias",
+    "age": 28,
+    "country": "Mexico",
+    "gender": "Femenino ",
+    "emoji": ":doggy:"
+  },
+  {
+    "name": "Ramón Penilla",
+    "age": 40,
+    "country": "México",
+    "gender": "Masculino",
+    "emoji": ":invasor_del_espacio:"
+  },
+  {
+    "name": "Gaby Díaz",
+    "age": 27,
+    "country": "CDMX",
+    "gender": "Femenino",
+    "emoji": ":dedos_cruzados:"
+  },
+  {
+    "name": "Flor Díaz",
+    "age": 23,
+    "country": "México",
+    "gender": "Femenino",
+    "emoji": ":party_blob:"
+  },
+  {
+    "name": "Alonso Higareda",
+    "age": 26,
+    "country": "México",
+    "gender": "Masculino",
+    "emoji": ":cara_disfrazada:"
+  },
+  {
+    "name": "Díaz Bryan",
+    "age": 21,
+    "country": "México",
+    "gender": "Masculino",
+    "emoji": ":lengua_fuera_con_ojos_cerrados:"
+  },
+  {
+    "name": "Yessenia Reyes",
+    "age": 28,
+    "country": "México",
+    "gender": "Femenino",
+    "emoji": ":gato2:"
+  }
+]
