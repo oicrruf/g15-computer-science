@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h3 class="has-text-weight-semibold is-size-4 my-4">¿Quién ese ese pokemon?</h3>
+            <form id="pokedex">
+                <div class="field-body mb-2">
+                    <div class="field">
+                        <label class="label">Nombre</label>
+                        <input placeholder="Ingresa un nombre" type="text" required id="nombre" class="input">
+                    </div>
+                    <div class="field">
+                        <label class="label">Tipo</label>
+                        <input placeholder="Ingresa un tipo" type="text" required id="tipo" class="input">
+                    </div>
+                </div>
+                <div class="field-body mb-2">
+                    <div class="field">
+                        <label class="label">Número</label>
+                        <input placeholder="Ingresa un Número" type="number" required id="numero" class="input">
+                    </div>
+                    <div class="field">
+                        <label class="label">Foto</label>
+                        <input placeholder="Ingresa una URL" type="text" required id="foto" class="input">
+                    </div>
+                </div>
+                <div class="field-body mb-2">
+                    <div class="field">
+                        <label class="label">Altura</label>
+                        <input placeholder="Ingresa una altura" type="text" required id="altura" class="input">
+                    </div>
+                    <div class="field">
+                        <label class="label">Peso</label>
+                        <input placeholder="Ingresa un peso" type="text" required id="peso" class="input">
+                    </div>
+                </div>
+                <button id="boton" type="submit" class="mt-4 button is-primary"><b>Agregar</b></button>
+            </form>
+            <hr/>
+            <div class="columns is-multiline" id="listado">
+                <!--div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                        <figure class="image is-square has-background-light">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Placeholder image">
+                        </figure>
+                        </div>
+                        <div class="card-content">
+                        <h2 class="is-size-4 has-text-weight-bold">Squirtle</h2>
+                        <span class="tag is-link">Agua</span>
+                        <p>No. 7</p>
+                        <p>Altura: 0,5m</p>
+                        <p>Peso: 9,0kg</p>
+                        </div>
+                    </div>
+                </div-->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
