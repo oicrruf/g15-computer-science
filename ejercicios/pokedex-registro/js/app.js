@@ -2,25 +2,27 @@ let pokemones = [];
 
 //Codigo para ejecutar hasta que la pagina se termina de cargar
 window.onload=function(){
-    document.querySelector("#pokedex").addEventListener("submit",getFormData);
+    var formulario = document.querySelector("#pokedex");
+    formulario.addEventListener("submit",getFormData);
 }
 
 function getFormData(evt){
     evt.preventDefault();
-    let p_nombre = document.querySelector("#nombre").value;
+    /*let p_nombre = document.querySelector("#nombre").value;
     let p_tipo = document.querySelector("#tipo").value;
     let p_numero = document.querySelector("#numero").value;
     let p_altura = document.querySelector("#altura").value;
     let p_peso = document.querySelector("#peso").value;
-    let p_foto = document.querySelector("#foto").value;
+    let p_foto = document.querySelector("#foto").value;*/
 
+    const { nombre, tipo, numero, altura, peso, foto } = evt.target;
     let pokemon = {
-        nombre: p_nombre,
-        tipo: p_tipo,
-        numero: p_numero,
-        altura: p_altura,
-        peso: p_peso,
-        foto:p_foto
+        nombre: nombre.value,
+        tipo: tipo.value,
+        numero: numero.value,
+        altura: altura.value,
+        peso: peso.value,
+        foto: foto.value
     };
 
     pokemones.push(pokemon);
