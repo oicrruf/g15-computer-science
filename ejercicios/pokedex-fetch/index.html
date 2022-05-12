@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +7,12 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="css/tipos.css">
     <script src="js/app.js"></script>
-    <script src="https://kit.fontawesome.com/cda7ff839c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar is-danger is-fixed-top">
-            <div class="navbar-item">
-                <div class="field">
-                    <p class="control has-icons-right">
-                      <input class="input" type="text" name="buscar" id="buscar" placeholder="Introduce un nombre">
-                      <span class="icon is-small is-right">
-                        <i class="fa fa-search"></i>
-                      </span>
-                    </p>
-                </div>
-            </div>
-            <div class="navbar-item">
-                <button class="button is-link" id="es-agua">Agua</button>
-            </div>
-            <div class="navbar-item">
-                <button class="button is-success" id="dos-tipos">2 tipos</button>
-            </div>
-        </nav>
-    </header>
     <section class="section">
         <div class="container">
+            <h3 class="has-text-weight-semibold is-size-4 my-4">¿Quién ese ese pokemon?</h3>
             <div class="columns is-multiline" id="listado">
             </div>
         </div>

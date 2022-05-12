@@ -1,0 +1,5 @@
+Orden de los proyectos:
+
+1. pokedex-registro
+2. pokedes-fetch
+3. pokedex

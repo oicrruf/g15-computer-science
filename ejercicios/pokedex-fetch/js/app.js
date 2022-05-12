@@ -6,48 +6,10 @@ window.onload = function(){
         document.querySelector("#popup").classList.toggle("is-active");
     });
 
-    document.querySelector("#buscar").addEventListener("keyup",function(evt){
-        if(evt.target.value.length>=3){
-            /*
-            let resultados=[];
-            for(var i=0; i<pokemones.length;i++){
-                if(pokemones[i].name.toLowerCase().includes(evt.target.value.toLowerCase())){
-                    resultados.push(pokemones[i]);
-                }
-            }*/
-            let resultados = pokemones.filter((pokemon) => 
-                    pokemon.name.toLowerCase().includes(evt.target.value.toLowerCase())
-            )
-
-            /*
-            pokemones.filter(function(pokemon){
-                return pokemon.name.toLowerCase().includes(evt.target.value.toLowerCase();
-            })*/
-
-            listPokemones(resultados);
-        }
-
-    });
-
-    document.querySelector("#es-agua").addEventListener("click",function(evt){
-        let resultados = pokemones.filter((pokemon) => 
-            pokemon.type.includes("water")
-        )
-        listPokemones(resultados);
-    });
-
-    document.querySelector("#dos-tipos").addEventListener("click",function(evt){
-        let resultados = pokemones.filter((pokemon) => 
-            pokemon.type.length==2
-        )
-        listPokemones(resultados);
-    });
-
     fetch("https://raw.githubusercontent.com/oicrruf/g15-computer-science/develop/ejercicios/pokedex-registro/json/pokemon.json")
     .then(response => response.json())
     .then(data => {
-        pokemones=data;
-        listPokemones(pokemones)
+        listPokemones(data)
     });
 
     /*
