@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/tipos.css?v=2">
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/cda7ff839c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar is-danger is-fixed-top">
+            <div class="navbar-brand">
+                <h1 class="">Pokedex</h1>
+            </div>
+            <div class="navbar-item">
+                <div class="field">
+                    <p class="control has-icons-right">
+                      <input class="input" type="text" name="buscar" id="buscar" placeholder="Introduce un nombre">
+                      <span class="icon is-small is-right">
+                        <i class="fa fa-search"></i>
+                      </span>
+                    </p>
+                </div>
+            </div>
+            <!--div class="navbar-item">
+                <button class="button is-link" id="es-agua">Agua</button>
+            </div>
+            <div class="navbar-item">
+                <button class="button is-success" id="dos-tipos">2 tipos</button>
+            </div-->
+            <div class="navbar-item">
+                <div class="select">
+                <select name="pokemon_type" id="pokemon_type">
+                        <option value="">Todos los tipos</option>
+                        <option value="steel">Acero</option>
+                        <option value="water">Agua</option>
+                        <option value="bug">Bicho</option>
+                        <option value="dragon">Dragón</option>
+                        <option value="electico">Eléctrico</option>
+                        <option value="ghost">Fantasma</option>
+                        <option value="fire">Fuego</option>
+                        <option value="fairy">Hada</option>
+                        <option value="ice">Hielo</option>
+                        <option value="fighting">Lucha</option>
+                        <option value="normal">Normal</option>
+                        <option value="grass">Planta</option>
+                        <option value="psychic">Psíquico</option>
+                        <option value="rock">Roca</option>
+                        <option value="dark">Siniestro</option>
+                        <option value="ground">Tierra</option>
+                        <option value="poison">Veneno</option>
+                        <option value="flying">Volador</option>
+                    </select>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <button class="button is-dark" id="reset">Reiniciar</button>
+                        <button class="button is-warning" id="favoritos"><span class="icon"><i class="fa fa-star"></i></span><span>Mis favoritos</span></button>
+                        <button class="button is-white" id="ascendente">Ascendente</button>
+                        <button class="button is-white" id="descendente">Descendente</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline" id="listado">
+            </div>
+        </div>
+    </section>
+    <aside id="mis-favoritos" class="is-hidden">
+        <h2 class="is-size-5 mb-3 has-text-weight-semibold has-text-centered">Mis favoritos</h2>
+        <div id="listado-favoritos">
+
+        </div>
+    </aside>
+    <div class="modal" id="popup">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title" id="pokemon-name"></p>
+            <button id="delete" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-7">
+                    <figure class="image">
+                        <image src="" id="pokemon-thumb"></image>
+                    </figure>
+                </div>
+                <div class="column">
+                    <h2 class="is-size-5 has-text-weight-semibold">No. <span id="pokemon-number"></span></h2>
+                    <p id="pokemon-tags"></p>
+
+                    <p class="mt-5"><b>Altura:</b> <span id="pokemon-height"></span></p>
+                    <p><b>Peso:</b> <span id="pokemon-weight"></span></p>
+                </div>
+            </div>
+          </section>
+        </div>
+      </div>
+</body>
+</html>
